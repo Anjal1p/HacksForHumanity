@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignInPage"
+    android:background="@drawable/darkblue">
+
+
+    <Button
+        android:id="@+id/homepage"
+        style="@android:style/ButtonBar"
+        android:layout_width="125dp"
+        android:layout_height="34dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="173dp"
+        android:background="#050577"
+        android:text="Log in"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:typeface="serif"
+        tools:layout_editor_absoluteX="130dp"
+        tools:layout_editor_absoluteY="382dp" />
+
+    <Button
+        android:id="@+id/signup"
+        android:layout_width="114dp"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@android:color/transparent"
+        android:text="Sign Up"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        tools:layout_editor_absoluteX="135dp"
+        tools:layout_editor_absoluteY="517dp" />
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="201dp"
+        android:drawableLeft="@drawable/ic_action_usern"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Username"
+        android:textColor="@android:color/white"
+        tools:layout_editor_absoluteX="84dp"
+        tools:layout_editor_absoluteY="259dp" />
+
+    <EditText
+        android:id="@+id/editText3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:drawableLeft="@drawable/ic_action_password"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:text="Password"
+        android:textColor="@android:color/white" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="227dp"
+        android:layout_height="260dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        app:srcCompat="@drawable/shh" />
+
+</android.widget.RelativeLayout>

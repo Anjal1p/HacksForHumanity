@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/darkblue"
+    tools:context=".Interests">
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="116dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/editText"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="27dp"
+        android:text="UserName :"
+        android:textColor="@android:color/white"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="28dp"
+        android:layout_marginTop="42dp"
+        android:ems="10"
+        android:backgroundTint="@color/SlateGray"
+        android:inputType="textPersonName"
+        android:textColor="@android:color/white"
+        android:textSize="14sp" />
+
+    <EditText
+        android:id="@+id/editText4"
+        android:layout_width="179dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/editText"
+        android:layout_alignTop="@+id/textView7"
+        android:layout_marginTop="-6dp"
+        android:ems="10"
+        android:backgroundTint="@color/SlateGray"
+        android:inputType="textPersonName"
+        android:textColor="@android:color/white"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="63dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/textView6"
+        android:layout_marginTop="175dp"
+        android:text=" Age :"
+        android:textColor="@android:color/white"
+        android:textSize="20sp" />
+
+    <Spinner
+        android:id="@+id/Age"
+        android:layout_width="92dp"
+        android:layout_height="35dp"
+        android:layout_alignStart="@+id/editText"
+        android:layout_alignTop="@+id/textView3"
+        android:background="@android:color/white"
+        android:entries="@array/age" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="37dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/textView6"
+        android:layout_marginTop="228dp"
+        android:text="Phone No. :"
+        android:textColor="@android:color/white"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="116dp"
+        android:layout_height="31dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/textView6"
+        android:layout_marginTop="120dp"
+        android:text="Password : "
+        android:textColor="@android:color/white"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/editText5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/editText"
+        android:layout_alignTop="@+id/textView4"
+        android:ems="10"
+        android:backgroundTint="@color/SlateGray"
+        android:inputType="textPersonName"
+        android:textColor="@android:color/white"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/textView6"
+        android:layout_marginBottom="244dp"
+        android:text="Interests:"
+        android:textColor="@android:color/white"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/ready"
+        android:layout_width="136dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:background="@color/colorPrimaryDark"
+        android:text="I'm ready!"
+        android:textColor="@android:color/white" />
+
+    <CheckBox
+        android:id="@+id/friendCheck"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/editText5"
+        android:layout_alignTop="@+id/adultCheck"
+        android:buttonTint="@android:color/white"
+        android:text="Friendship"
+        android:textColor="@android:color/white" />
+
+    <CheckBox
+        android:id="@+id/selfCheck"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/textView6"
+        android:layout_marginBottom="135dp"
+        android:buttonTint="@android:color/white"
+        android:text="Self-Care"
+        android:textColor="@android:color/white" />
+
+    <CheckBox
+        android:id="@+id/relationshipCheck"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/textView6"
+        android:layout_marginBottom="83dp"
+        android:buttonTint="@android:color/white"
+        android:text="Relationship"
+        android:textColor="@android:color/white" />
+
+    <CheckBox
+        android:id="@+id/familyCheck"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/editText5"
+        android:layout_alignTop="@+id/relationshipCheck"
+        android:buttonTint="@android:color/white"
+        android:text="Family"
+        android:textColor="@android:color/white" />
+
+    <CheckBox
+        android:id="@+id/academicCheck"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/editText5"
+        android:layout_alignTop="@+id/selfCheck"
+        android:buttonTint="@android:color/white"
+        android:text="Academic Help"
+        android:textColor="@android:color/white" />
+
+    <CheckBox
+        android:id="@+id/adultCheck"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/textView6"
+        android:layout_marginBottom="188dp"
+        android:buttonTint="@android:color/white"
+        android:text="Adulting 101"
+        android:textColor="@android:color/white" />
+
+</android.widget.RelativeLayout>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomePage">
+
+    <TextView
+        android:id="@+id/communities"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="My Communities"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/academics"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/communities"
+        android:layout_toEndOf="@+id/family"
+        android:visibility="invisible"
+        android:text="Academic Help" />
+
+    <Button
+        android:id="@+id/adulting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/communities"
+        android:visibility="invisible"
+        android:layout_toStartOf="@+id/selfcare"
+        android:text="Adulting 101" />
+
+    <Button
+        android:id="@+id/selfcare"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/academics"
+        android:visibility="invisible"
+        android:layout_centerHorizontal="true"
+        android:text="Self Care" />
+
+    <Button
+        android:id="@+id/friendship"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/academics"
+        android:layout_below="@+id/communities"
+        android:visibility="invisible"
+        android:text="Friendship" />
+
+    <Button
+        android:id="@+id/relation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/communities"
+        android:visibility="invisible"
+        android:layout_toStartOf="@+id/family"
+        android:text="Relationships" />
+
+    <Button
+        android:id="@+id/family"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/friendship"
+        android:visibility="invisible"
+        android:layout_centerHorizontal="true"
+        android:text="Family" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:text="Hot Communities"
+        android:gravity="center"
+        android:background="@color/SlateGray"
+        android:textColor="@android:color/white"
+        android:textSize="24sp" />
+</android.widget.RelativeLayout>
